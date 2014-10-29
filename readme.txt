@@ -1,9 +1,4 @@
-wp-chocolate-alphabetical-sorting
-=================================
-
-This WordPress plugin sorts categories and tags by correct alphabetical order based on the collation rules of different languages (especially ones that have characters with diacritic or accent marks).  
-
-=== Chocolate Alphabetical Sorting ===
+﻿=== Chocolate Alphabetical Sorting ===
 Contributors: honeysilvas
 Donate link: http://silverhoneymedia.com
 Tags: alphabetical, sorting, alphabetized, category, categories, tag, tags, terms, character, characters, language, local, international, accent, diacritic, marks
@@ -89,3 +84,23 @@ Chocolate Alphabet Sorting currently only supports the following collations in t
 3. In your Dashboard, go to Settings > Reading.
 4. Change the language under "Alphabetical Sort by Language".
 5. That's it!
+
+
+
+== Frequently Asked Questions ==
+
+(will add later)
+
+
+== Screenshots ==
+
+(will add later)
+
+
+== Changelog ==
+
+= 1.0.0 =
+
+Released
+
+

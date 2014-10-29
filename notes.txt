@@ -1,0 +1,4 @@
+To do:
+
+fix categories in post
+check parent categories (nested categories)
