@@ -111,6 +111,10 @@ treating the characters A, Å, Ä the same as the character A, so it incorrectly
 
 == Changelog ==
 
+= 1.0.2 = 
+
+Added validation.
+
 = 1.0.1 = 
 
 Improved Readme.txt

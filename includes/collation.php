@@ -23,12 +23,24 @@ if ( !function_exists( 'alphacollate_get_collation_language' )){
 		// If there is no collation set, check the value of DB_COLLATE in wp_config.php file 
 		if ( $collation_language == '' ){
 			$collation_language = DB_COLLATE;
-		}		
-		return $collation_language;
+		}	
+
+		if ( true == alphacollate_check_collation_in_array( $collation_language ) ){
+			return $collation_language;
+		}else{
+			return false;
+		}
 	}
 }	
 
-
+// Check collation language is in array
+if ( !function_exists( ' alphacollate_check_collation_in_array' )){
+	function alphacollate_check_collation_in_array( $collation_language ){
+		if ( array_key_exists( $collation_language, alphacollate_get_collation_language_array() ) ){
+			return true;
+		}	
+	}
+}
 
 // add collation to terms (tags, categories, taxonomies) "order by" in SQL query
 if ( !function_exists( 'alphacollate_terms_filter' ) ){

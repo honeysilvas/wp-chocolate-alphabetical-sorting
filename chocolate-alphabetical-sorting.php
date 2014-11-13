@@ -3,7 +3,7 @@
 		Plugin Name:  Chocolate Alphabetical Sorting
 		Plugin URI:  http://silverhoneymedia.com
 		Description:   Sorts categories and tags by correct alphabetical order based on the collation rules of different languages (especially ones that have characters with diacritic or accent marks). This WordPress plugin fixes incorrect alphabetical sorting.
-		Version:  1.0.0
+		Version:  1.0.2
 		Author:  Honey Silvas
 		Author URI:  http://honeysilvas.wordpress.com
 		License: GPL2
