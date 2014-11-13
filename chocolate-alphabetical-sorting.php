@@ -35,10 +35,3 @@ if ( is_admin() ){
 }
 	
 alphacollate_do_collation();
-
-	
-
-
-
-
-

@@ -12,8 +12,66 @@ This WordPress plugin sorts categories and tags by correct alphabetical order ba
 
 == Description ==
 
-This plugin fixes incorrect alphabetical sorting for the different languages.
+This plugin fixes incorrect alphabetical sorting for the different languages in categories and tags.
 
+
+== Supported Languages ==
+
+Collation for the following languages are supported:
+
+African, American English, Central Asian, Czech, Danish, Esperanto, Estonian, 
+European, Hungarian, Icelandic, Indic, Ipa, Korean, Latvian, Lithuanian, 
+Middle Eastern, Persian, Philippine, Phonetic, Polish, Roman, Romanian, Sinhala,  
+Slovak, Slovenian, South East Asian, Spanish, Swedish, Turkish
+
+== Supported Collations ==
+
+The following collations are supported:
+
+			utf8_general_ci.african
+			utf8_unicode_ci.african
+			utf8_general_ci.american
+			utf8_unicode_ci.american		
+			utf8_general_ci.central_asian
+			utf8_unicode_ci.central_asian
+			utf8_czech_ci
+			utf8_danish_ci	
+			utf8_esperanto_ci
+			utf8_estonian_ci		
+			utf8_general_ci.european
+			utf8_unicode_ci.european	
+			utf8_hungarian_ci
+			utf8_icelandic_ci
+			utf8_general_ci.indic
+			utf8_unicode_ci.indic	
+			utf8_general_ci.ipa
+			utf8_unicode_ci.ipa
+			utf8_general_ci.korean
+			utf8_unicode_ci.korean
+			utf8_latvian_ci
+			utf8_lithuanian_ci
+			utf8_general_ci.middle_eastern
+			utf8_unicode_ci.middle_eastern
+			utf8_persian_ci
+			utf8_general_ci.philippine
+			utf8_unicode_ci.philippine
+			utf8_general_ci.phonetic
+			utf8_unicode_ci.phonetic
+			utf8_polish_ci
+			utf8_roman_ci
+			utf8_romanian_ci
+			utf8_sinhala_ci
+			utf8_slovak_ci
+			utf8_slovenian_ci
+			utf8_general_ci.south_east_asian
+			utf8_unicode_ci.south_east_asian
+			utf8_spanish_ci
+			utf8_spanish2_ci
+			utf8_swedish_ci
+			utf8_turkish_ci
+		
+== Example ==
+			
 For example, the Swedish alphabet is ordered like this:
 
 	A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Å Ä Ö 
@@ -29,52 +87,6 @@ However, WordPress incorrectly sorts it like this:
 	a å ä b c d e f g h i j k l m n o p q r s t u v w x y z ö
 	
 treating the characters A, Å, Ä the same as the character A, so it incorrectly sorts all these characters together. 
-
-== Supported Languages ==
-
-Chocolate Alphabet Sorting currently only supports the following collations in the utf8 character set.  
-
-			'utf8_general_ci.african' 			=> 'African',	
-			'utf8_unicode_ci.african' 			=> 'African (Unicode)',
-			'utf8_general_ci.american'			=> 'American',	
-			'utf8_unicode_ci.american' 			=> 'American (Unicode)',		
-			'utf8_general_ci.central_asian' 	=> 'Central Asian',	
-			'utf8_unicode_ci.central_asian' 	=> 'Central Asian (Unicode)',
-			'utf8_czech_ci' 					=> 'Czech', 	
-			'utf8_danish_ci' 					=> 'Danish',	
-			'utf8_esperanto_ci' 				=> 'Esperanto', 
-			'utf8_estonian_ci' 					=> 'Estonian',		
-			'utf8_general_ci.european' 			=> 'European', 
-			'utf8_unicode_ci.european' 			=> 'European (Unicode)',	
-			'utf8_hungarian_ci' 				=> 'Hungarian',
-			'utf8_icelandic_ci' 				=> 'Icelandic',		
-			'utf8_general_ci.indic' 			=> 'Indic',	
-			'utf8_unicode_ci.indic' 			=> 'Indic (Unicode)',	
-			'utf8_general_ci.ipa' 				=> 'Ipa',
-			'utf8_unicode_ci.ipa' 				=> 'Ipa (Unicode)',
-			'utf8_general_ci.korean' 			=> 'Korean',
-			'utf8_unicode_ci.korean' 			=> 'Korean (Unicode)',
-			'utf8_latvian_ci' 					=> 'Latvian',
-			'utf8_lithuanian_ci' 				=> 'Lithuanian',	
-			'utf8_general_ci.middle_eastern' 	=> 'Middle Eastern',
-			'utf8_unicode_ci.middle_eastern' 	=> 'Middle Eastern (Unicode)',
-			'utf8_persian_ci' 					=> 'Persian',
-			'utf8_general_ci.philippine' 		=> 'Philippine',
-			'utf8_unicode_ci.philippine' 		=> 'Philippine (Unicode)',
-			'utf8_general_ci.phonetic' 			=> 'Phonetic',
-			'utf8_unicode_ci.phonetic' 			=> 'Phonetic (Unicode)',
-			'utf8_polish_ci' 					=> 'Polish',
-			'utf8_roman_ci' 					=> 'Roman',
-			'utf8_romanian_ci' 					=> 'Romanian',
-			'utf8_sinhala_ci' 					=> 'Sinhala',
-			'utf8_slovak_ci' 					=> 'Slovak',
-			'utf8_slovenian_ci' 				=> 'Slovenian',
-			'utf8_general_ci.south_east_asian' 	=> 'South East Asian',
-			'utf8_unicode_ci.south_east_asian' 	=> 'South East Asian (Unicode)',
-			'utf8_spanish_ci' 					=> 'Spanish',
-			'utf8_spanish2_ci' 					=> 'Spanish 2',
-			'utf8_swedish_ci' 					=> 'Swedish',
-			'utf8_turkish_ci' 					=> 'Turkish'
 
 
 == Installation ==
@@ -98,6 +110,10 @@ Chocolate Alphabet Sorting currently only supports the following collations in t
 
 
 == Changelog ==
+
+= 1.0.1 = 
+
+Improved Readme.txt
 
 = 1.0.0 =
 

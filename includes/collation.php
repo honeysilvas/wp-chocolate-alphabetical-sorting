@@ -38,7 +38,7 @@ if ( !function_exists( 'alphacollate_terms_filter' ) ){
 	
 		// Only do this if collation language is not empty
 		if ( !$collation_language == '' ){
-			// only add collation when ordering the terms by name, not when ordering by popularity, etc. 
+			// only add collation when ordering the terms by name, not when ordering by popularity, date, etc. 
 			if ( strpos( $orderby , 'name' ) > 1 ) {
 				// add collation to terms "order by" in the SQL query		
 				$orderby = $orderby . " collate " . $collation_language;
