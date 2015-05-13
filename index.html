@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>WordPress Chocolate Alphabetical Sorting by honeysilvas</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>WordPress Chocolate Alphabetical Sorting</h1>
+          <h2>This WordPress plugin sorts categories and tags by correct alphabetical order based on the collation rules of different languages (especially ones that have characters with diacritic or accent marks).  </h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/honeysilvas/wp-chocolate-alphabetical-sorting/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/honeysilvas/wp-chocolate-alphabetical-sorting/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/honeysilvas/wp-chocolate-alphabetical-sorting" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="wp-chocolate-alphabetical-sorting" class="anchor" href="#wp-chocolate-alphabetical-sorting" aria-hidden="true"><span class="octicon octicon-link"></span></a>wp-chocolate-alphabetical-sorting</h1>
+
+<p>This WordPress plugin sorts categories and tags by correct alphabetical order based on the collation rules of different languages (especially ones that have characters with diacritic or accent marks).  </p>
+
+<p>=== Chocolate Alphabetical Sorting ===
+Contributors: honeysilvas
+Donate link: <a href="http://silverhoneymedia.com">http://silverhoneymedia.com</a>
+Tags: alphabetical, sorting, alphabetized, category, categories, tag, tags, terms, character, characters, language, local, international, accent, diacritic, marks
+Requires at least: 4.0
+Tested up to: 4.0
+Stable tag: 1.0
+License: GPLv2 or later
+License URI: <a href="http://www.gnu.org/licenses/gpl-2.0.html">http://www.gnu.org/licenses/gpl-2.0.html</a></p>
+
+<p>This WordPress plugin sorts categories and tags by correct alphabetical order based on the collation rules of different languages (especially ones that have characters with diacritic or accent marks).</p>
+
+<p>== Description ==</p>
+
+<p>This plugin fixes incorrect alphabetical sorting for the different languages.</p>
+
+<p>For example, the Swedish alphabet is ordered like this:</p>
+
+<pre><code>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Å Ä Ö 
+a b c d e f g h i j k l m n o p q r s t u v w x y z å ä ö
+</code></pre>
+
+<p>In Swedish alphabet rules, the following characters with diacritic marks should all be sorted after the character z. </p>
+
+<pre><code>Å, Ä, Ö, å, ä, and ö 
+</code></pre>
+
+<p>However, WordPress incorrectly sorts it like this:</p>
+
+<pre><code>A Å Ä B C D E F G H I J K L M N O P Q R S T U V W X Y Z Ö 
+a å ä b c d e f g h i j k l m n o p q r s t u v w x y z ö
+</code></pre>
+
+<p>treating the characters A, Å, Ä the same as the character A, so it incorrectly sorts all these characters together. </p>
+
+<p>== Supported Languages ==</p>
+
+<p>Chocolate Alphabet Sorting currently only supports the following collations in the utf8 character set.  </p>
+
+<pre><code>        'utf8_general_ci.african'           =&gt; 'African',   
+        'utf8_unicode_ci.african'           =&gt; 'African (Unicode)',
+        'utf8_general_ci.american'          =&gt; 'American',  
+        'utf8_unicode_ci.american'          =&gt; 'American (Unicode)',        
+        'utf8_general_ci.central_asian'     =&gt; 'Central Asian', 
+        'utf8_unicode_ci.central_asian'     =&gt; 'Central Asian (Unicode)',
+        'utf8_czech_ci'                     =&gt; 'Czech',     
+        'utf8_danish_ci'                    =&gt; 'Danish',    
+        'utf8_esperanto_ci'                 =&gt; 'Esperanto', 
+        'utf8_estonian_ci'                  =&gt; 'Estonian',      
+        'utf8_general_ci.european'          =&gt; 'European', 
+        'utf8_unicode_ci.european'          =&gt; 'European (Unicode)',    
+        'utf8_hungarian_ci'                 =&gt; 'Hungarian',
+        'utf8_icelandic_ci'                 =&gt; 'Icelandic',     
+        'utf8_general_ci.indic'             =&gt; 'Indic', 
+        'utf8_unicode_ci.indic'             =&gt; 'Indic (Unicode)',   
+        'utf8_general_ci.ipa'               =&gt; 'Ipa',
+        'utf8_unicode_ci.ipa'               =&gt; 'Ipa (Unicode)',
+        'utf8_general_ci.korean'            =&gt; 'Korean',
+        'utf8_unicode_ci.korean'            =&gt; 'Korean (Unicode)',
+        'utf8_latvian_ci'                   =&gt; 'Latvian',
+        'utf8_lithuanian_ci'                =&gt; 'Lithuanian',    
+        'utf8_general_ci.middle_eastern'    =&gt; 'Middle Eastern',
+        'utf8_unicode_ci.middle_eastern'    =&gt; 'Middle Eastern (Unicode)',
+        'utf8_persian_ci'                   =&gt; 'Persian',
+        'utf8_general_ci.philippine'        =&gt; 'Philippine',
+        'utf8_unicode_ci.philippine'        =&gt; 'Philippine (Unicode)',
+        'utf8_general_ci.phonetic'          =&gt; 'Phonetic',
+        'utf8_unicode_ci.phonetic'          =&gt; 'Phonetic (Unicode)',
+        'utf8_polish_ci'                    =&gt; 'Polish',
+        'utf8_roman_ci'                     =&gt; 'Roman',
+        'utf8_romanian_ci'                  =&gt; 'Romanian',
+        'utf8_sinhala_ci'                   =&gt; 'Sinhala',
+        'utf8_slovak_ci'                    =&gt; 'Slovak',
+        'utf8_slovenian_ci'                 =&gt; 'Slovenian',
+        'utf8_general_ci.south_east_asian'  =&gt; 'South East Asian',
+        'utf8_unicode_ci.south_east_asian'  =&gt; 'South East Asian (Unicode)',
+        'utf8_spanish_ci'                   =&gt; 'Spanish',
+        'utf8_spanish2_ci'                  =&gt; 'Spanish 2',
+        'utf8_swedish_ci'                   =&gt; 'Swedish',
+        'utf8_turkish_ci'                   =&gt; 'Turkish'
+</code></pre>
+
+<p>== Installation ==</p>
+
+<ol>
+<li>Upload the entire 'wp-chocolate-alphabetical-sorting' folder to the '/wp-content/plugins/' directory of your WordPress installation</li>
+<li>Activate the plugin through the 'Plugins' menu in WordPress</li>
+<li>In your Dashboard, go to Settings &gt; Reading.</li>
+<li>Change the language under "Alphabetical Sort by Language".</li>
+<li>That's it!</li>
+</ol>
+        </section>
+
+        <footer>
+          WordPress Chocolate Alphabetical Sorting is maintained by <a href="https://github.com/honeysilvas">honeysilvas</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
